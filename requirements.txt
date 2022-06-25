@@ -1,0 +1,9 @@
+aiofiles
+motor
+Pillow
+humanize
+hachoir
+pyrogram==2.0.26
+TgCrypto
+pymongo
+dnspython
