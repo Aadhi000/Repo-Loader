@@ -8,13 +8,16 @@
   <img src="https://telegra.ph/file/c1fb90602a7a67a791570.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 
+<div align="center">
+<br><p align="center"><b>Pʀᴏғɪʟᴇ Vɪᴇᴡᴇʀs</b></p>  
+<p align="center"><img align="center" src="https://profile-counter.glitch.me/{Zinan100/ROCKY_LOADER}/count.svg"/></p> 
+
+
+
 
 <a href="https://youtube.com/channel/UCVbKgUOGVEdQlmLJ_fXrWMQ">
   <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-black?logo=youtube" width="150">
 
-<div align="center">
-<br><p align="center"><b>Pʀᴏғɪʟᴇ Vɪᴇᴡᴇʀs</b></p>  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/{Zinan100/ROCKY_LOADER}/count.svg"/></p> 
 
 
 [![Stars](https://img.shields.io/github/stars/Zinan100/Rocky?style=flat-square&color=green)](https://github.com/Zinan100/Rocky/stargazers)
