@@ -8,11 +8,6 @@
   <img src="https://telegra.ph/file/c1fb90602a7a67a791570.jpg" alt="Ajax-Extra-FeaturesLogo">
 </p>
 
-<div align="center">
-<br><p align="center"><b>Pʀᴏғɪʟᴇ Vɪᴇᴡᴇʀs</b></p>  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/{Zinan100/ROCKY_LOADER}/count.svg"/></p> 
-
-
 
 
 <a href="https://youtube.com/channel/UCVbKgUOGVEdQlmLJ_fXrWMQ">
