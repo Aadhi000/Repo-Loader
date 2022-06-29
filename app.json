@@ -1,123 +1,65 @@
 {
-    "name": "ROCKY_AUTOFILTER_BOT",
-    "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
-    "stack": "container",
-    "logo": "https://telegra.ph/file/c1fb90602a7a67a791570.jpg",
-    "keywords": [
-      "telegram",
-      "auto-filter",
-      "filter",
-      "best",
-      "indian",
-      "pyrogram",
-      "media",
-      "search",
-      "channel",
-      "index",
-      "inline"
-    ],
-    "website": "https://t.me/zinan00100_bot",
-    "repository": "https://github.com/Zinan100/ROCKY_LOADER",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Your bot token.",
-            "required": true
-        },
-        "API_ID": {
-            "description": "Get this value from https://my.telegram.org",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Get this value from https://my.telegram.org",
-            "required": true
-        },
-        "CHANNELS": {
-            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "required": false
-        },
-        "ADMINS": {
-            "description": "Username or ID of Admin. Separate multiple Admins by space.",
-            "required": true
-        },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "required": false
-        },
-        "LOG_CHANNEL": {
-            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
-            "required": true       
-        },
-        "SUPPORT_CHAT": {
-            "description": "Username of a Support Group / ADMIN. ( Should be username without @ and not ID)",
-            "required": false
-        },
-        "AUTH_USERS": {
-            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
-            "required": false
-        },
-        "AUTH_CHANNEL": {
-            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
-            "required": false
-        },   
-        "USE_CAPTION_FILTER": {
-            "description": "Whether bot should use captions to improve search results. (True False)",
-            "required": false
-        },
-        "CUSTOM_FILE_CAPTION": {
-            "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "required": false
-        },
-        "DATABASE_URI": {
-            "description": "mongoDB URI.",
-            "required": true
-        },
-        "DATABASE_NAME": {
-            "description": "Name of the database in mongoDB.",
-            "required": false
-        },
-        "COLLECTION_NAME": {
-            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
-            "value": "Ajax_Files",
-            "required": false
-        },
-        "CACHE_TIME": {
-            "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server",
-            "value": "300",
-            "required": false
-        },
-        "IMDB": {
-            "description": "Imdb, the view of information when making True/False",
-            "required": false     
-        },
-        "IMDB_TEMPLATE": {
-            "description": "Custom IMDB Template",        
-            "required": false  
-        },
-        "SINGLE_BUTTON": {
-            "description": "choose b/w single or double buttons https://github.com/Aadhi000/Ajax/issues/22",
-            "value": "True",
-            "required": false
-        },
-        "P_TTI_SHOW_OFF": {
-            "description": "Customize Result Buttons to Callback or Url by (True = url / False = callback)",
-            "value": "True",
-            "required": false
-        },
-        "HEROKU_API_KEY": {
-             "description": "For Heroku Status in Bot Use /status",
-             "required": false
-        }
+  "name": "DWL RENAMER BOT",
+  "description": "Telegram's best Open Source Rename Bot. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "open",
+    "source",
+    "Rename"
+  ],
+  "success_url": "https://github.com/DARKWEBLOAD-TG/RENAMER-BOT",
+  "website": "https://github.com/DARKWEBLOAD-TG/RENAMER-BOT",
+  "repository": "https://github.com/DARKWEBLOAD-TG/RENAMER-BOT",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
     },
-    "addons": [],
-    "buildpacks": [
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "UPDATE_CHANNEL": {
+      "description": "For Force Subscribe. Paste your channel Username (without @).. Also Make The Bot Admin In That Channel!! ",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "BANNED_USERS": {
+      "description": "Id's Of Users Which You don't Want To Use The Bot..",
+      "value": "",
+      "required": false
+    },
+    "CHUNK_SIZE": {
+      "description": "chunk size that should be used with requests",
+      "value": "128",
+      "required": false
+    }
+  },
+  "addons": [
     {
-      "url": "heroku/python"
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
     }
   ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
     }
+  }
 }
