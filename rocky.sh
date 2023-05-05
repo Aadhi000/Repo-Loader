@@ -1,6 +1,6 @@
 export TERM=xterm;
 
-git clone "${REPO_URL:-https://github.com/Aadhi000/Mm}" Mm
+git clone "${REPO_URL:-https://github.com/Aadhi000/Mm.git}" /Mm
 
 cd Mm
 
