@@ -1,6 +1,6 @@
 anytree
 appdirs
-aria2p
+
 asyncio
 attrdict
 beautifulsoup4
