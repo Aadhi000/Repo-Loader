@@ -45,7 +45,7 @@
 - [X] Image Editor
 - [X] lyirics
 - [X] carbon
-- [X] torrent
+- [X] t
 
 # Deploy
 
